@@ -1,0 +1,63 @@
+// set-product.mongodb
+
+use("pet_store")
+
+// Producto 1
+db.products.updateOne(
+  { _id: 1 },
+  { $set: { title: "Nuevo Collar para Perros", price: 14.99, description: "Collar actualizado para mayor comodidad.", category: "Accesorios", image: "nuevo_collar.jpg" } }
+)
+
+// Producto 2
+db.products.updateOne(
+  { _id: 2 },
+  { $set: { title: "Nuevo Juguete para Gatos", price: 10.99, description: "Juguete mejorado para mantener a tu gato entretenido.", category: "Juguetes", image: "nuevo_juguete.jpg" } }
+)
+
+// Producto 3
+db.products.updateOne(
+  { _id: 3 },
+  { $set: { title: "Nueva Cama para Perros Pequeños", price: 29.99, description: "Cama mejorada para perros pequeños, con cojín incluido.", category: "Camas", image: "nueva_cama.jpg" } }
+)
+
+// Producto 4
+db.products.updateOne(
+  { _id: 4 },
+  { $set: { title: "Nueva Comida Premium para Gatos", price: 19.99, description: "Fórmula mejorada con ingredientes de alta calidad para la salud de tu gato.", category: "Alimentación", image: "nueva_comida_gatos.jpg" } }
+)
+
+// Producto 5
+db.products.updateOne(
+  { _id: 5 },
+  { $set: { title: "Nuevo Arnés para Paseos Seguros", price: 22.99, description: "Arnés ajustable y seguro para paseos cómodos y seguros con tu perro.", category: "Accesorios", image: "nuevo_arnes.jpg" } }
+)
+
+// Producto 6
+db.products.updateOne(
+  { _id: 6 },
+  { $set: { title: "Nuevo Rascador de Gato con Plataformas", price: 39.99, description: "Rascador de gato mejorado con múltiples plataformas y juguetes colgantes.", category: "Muebles para Gatos", image: "nuevo_rascador.jpg" } }
+)
+
+// Producto 7
+db.products.updateOne(
+  { _id: 7 },
+  { $set: { title: "Nueva Chaqueta Impermeable para Perros", price: 28.99, description: "Chaqueta impermeable para perros con forro polar para mantenerlos calientes y secos.", category: "Ropa", image: "nueva_chaqueta.jpg" } }
+)
+
+// Producto 8
+db.products.updateOne(
+  { _id: 8 },
+  { $set: { title: "Nuevo Juguete Masticable para Perros", price: 12.99, description: "Juguete duradero para masticar, ayuda a la salud dental de tu perro.", category: "Juguetes", image: "nuevo_juguete_masticable.jpg" } }
+)
+
+// Producto 9
+db.products.updateOne(
+  { _id: 9 },
+  { $set: { title: "Nueva Arena Aglomerante para Gatos", price: 16.99, description: "Arena para gatos que forma grumos fácilmente para una limpieza sencilla.", category: "Aseo", image: "nueva_arena.jpg" } }
+)
+
+// Producto 10
+db.products.updateOne(
+  { _id: 10 },
+  { $set: { title: "Nueva Correa Retráctil para Paseos", price: 24.99, description: "Correa retráctil para paseos más flexibles y cómodos con tu perro.", category: "Accesorios", image: "nueva_correa_retractil.jpg" } }
+)

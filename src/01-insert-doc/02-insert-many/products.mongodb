@@ -1,0 +1,150 @@
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+use("pet_store")
+
+// Insertar 20 productos de mascotas simulando una tienda
+db.products.insertMany([
+  {
+    title: "Collar Reflectante para Perros",
+    price: 12.99,
+    description: "Collar de alta visibilidad para perros, ajustable y seguro durante la noche.",
+    category: "Accesorios",
+    image: "collar_reflectante.jpg"
+  },
+  {
+    title: "Juguete Interactivo para Gatos",
+    price: 8.99,
+    description: "Bola con luces LED y plumas para mantener a tu gato entretenido y activo.",
+    category: "Juguetes",
+    image: "juguete_interactivo.jpg"
+  },
+  {
+    title: "Cama Suave para Perros Pequeños",
+    price: 24.99,
+    description: "Cama acogedora y cómoda para perros pequeños, con almohada incluida.",
+    category: "Camas",
+    image: "cama_suave_pequeños.jpg"
+  },
+  {
+    title: "Comida Premium para Gatos",
+    price: 16.99,
+    description: "Fórmula equilibrada con ingredientes de alta calidad para la salud de tu gato.",
+    category: "Alimentación",
+    image: "comida_premium_gatos.jpg"
+  },
+  {
+    title: "Arnés para Paseos Seguros",
+    price: 18.99,
+    description: "Arnés ajustable y seguro para paseos cómodos y seguros con tu perro.",
+    category: "Accesorios",
+    image: "arnes_paseo.jpg"
+  },
+  {
+    title: "Rascador de Gato con Plataformas",
+    price: 32.99,
+    description: "Rascador de gato con múltiples plataformas y juguetes colgantes.",
+    category: "Muebles para Gatos",
+    image: "rascador_gato.jpg"
+  },
+  {
+    title: "Chaqueta Impermeable para Perros",
+    price: 22.99,
+    description: "Chaqueta impermeable para perros con forro polar para mantenerlos calientes y secos.",
+    category: "Ropa",
+    image: "chaqueta_impermeable.jpg"
+  },
+  {
+    title: "Juguete Masticable para Perros",
+    price: 9.99,
+    description: "Juguete duradero para masticar, ayuda a la salud dental de tu perro.",
+    category: "Juguetes",
+    image: "juguete_masticable.jpg"
+  },
+  {
+    title: "Arena Aglomerante para Gatos",
+    price: 14.99,
+    description: "Arena para gatos que forma grumos fácilmente para una limpieza sencilla.",
+    category: "Aseo",
+    image: "arena_aglomerante.jpg"
+  },
+  {
+    title: "Correa Retráctil para Paseos",
+    price: 15.99,
+    description: "Correa retráctil para paseos más flexibles y cómodos con tu perro.",
+    category: "Accesorios",
+    image: "correa_retractil.jpg"
+  },
+  {
+    title: "Juguete Pelota para Perros",
+    price: 6.99,
+    description: "Pelota resistente para juegos de buscar y traer con tu perro.",
+    category: "Juguetes",
+    image: "juguete_pelota.jpg"
+  },
+  {
+    title: "Cama Ortopédica para Perros Mayores",
+    price: 29.99,
+    description: "Cama ortopédica con soporte para perros mayores o con problemas articulares.",
+    category: "Camas",
+    image: "cama_ortopedica.jpg"
+  },
+  {
+    title: "Comida para Cachorros",
+    price: 19.99,
+    description: "Fórmula especialmente diseñada para las necesidades nutricionales de los cachorros.",
+    category: "Alimentación",
+    image: "comida_cachorros.jpg"
+  },
+  {
+    title: "Puerta para Gatos con Sensor",
+    price: 34.99,
+    description: "Puerta automática con sensor para permitir la entrada solo a gatos autorizados.",
+    category: "Accesorios",
+    image: "puerta_gatos_sensor.jpg"
+  },
+  {
+    title: "Ratón de Juguete para Gatos",
+    price: 5.99,
+    description: "Juguete interactivo en forma de ratón para mantener a tu gato activo.",
+    category: "Juguetes",
+    image: "raton_juguete.jpg"
+  },
+  {
+    title: "Transportadora de Viaje para Perros",
+    price: 27.99,
+    description: "Transportadora cómoda y segura para viajar con tu perro.",
+    category: "Accesorios",
+    image: "transportadora_viaje.jpg"
+  },
+  {
+    title: "Comedero Automático para Gatos",
+    price: 39.99,
+    description: "Comedero programable para gatos con temporizador automático.",
+    category: "Alimentación",
+    image: "comedero_automatico.jpg"
+  },
+  {
+    title: "Juguete Dispensador de Premios",
+    price: 14.99,
+    description: "Juguete que dispensa premios para mantener a tu perro entretenido.",
+    category: "Juguetes",
+    image: "juguete_dispensador.jpg"
+  },
+  {
+    title: "Cepillo de Aseo para Gatos",
+    price: 11.99,
+    description: "Cepillo suave para el cuidado del pelaje de tu gato y reducción de bolas de pelo.",
+    category: "Aseo",
+    image: "cepillo_aseo.jpg"
+  },
+  {
+    title: "Caseta de Madera para Perros",
+    price: 69.99,
+    description: "Caseta resistente y acogedora para que tu perro tenga su propio espacio al aire libre.",
+    category: "Camas",
+    image: "caseta_madera.jpg"
+  }
+])
