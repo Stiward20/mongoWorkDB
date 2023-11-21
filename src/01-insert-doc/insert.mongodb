@@ -3,7 +3,7 @@
 use("pet_store")
 
 db.products.insertOne({
-  _id: 1,
-  name: "Product 1",
-  price: 1000
+  _id: 001,
+  name: "collar",
+  price: 5500
 })
